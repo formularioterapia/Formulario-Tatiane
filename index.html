@@ -2,7 +2,8 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Formulário Tatiane</title>
+    <title>Formulário Terapêutico</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
     <style>
@@ -31,6 +32,8 @@
         label {
             font-size: 14px;
             font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
         }
 
         .input-estilizado {
@@ -38,8 +41,7 @@
             border: 1px solid #F7CAD0;
             border-radius: 15px;
             padding: 12px;
-            margin-top: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             outline: none;
             font-size: 14px;
         }
@@ -68,33 +70,75 @@
         }
     </style>
 </head>
+
 <body>
 
 <div class="formulario-container">
     <h1>Psicóloga Alice 💗</h1>
 
     <form action="https://formsubmit.co/aalice.castru@gmail.com" method="POST">
-        <!-- Configurações do FormSubmit -->
-        <input type="hidden" name="_subject" value="Teste">
+
+        <!-- Configurações FormSubmit -->
+        <input type="hidden" name="_subject" value="Novo formulário terapêutico preenchido">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
 
-        <label>Espero que você sinta-se acolhida e que seja um ambiente confortável para você ser você mesma. 💕</label><br><br>
+        <label>
+            Espero que você sinta-se acolhida e que seja um ambiente confortável para você ser você mesma. 💕
+        </label>
 
-        <!-- Campos -->
-        <label>1. Quando você pensa em alguem corajoso, quais características vem a sua mente? </label>
-        <textarea name="pergunta1" rows="5" class="input-estilizado" required></textarea>
+        <br>
 
-        <label>2. Quais elementos do ambiente de trabalho despertam maior apego em você? Poderia listá-los?</label>
-        <textarea name="pergunta2" rows="5" class="input-estilizado" required></textarea>
+        <!-- Pergunta 1 -->
+        <label>
+            1. Quando você pensa em alguem corajoso, quais características vem a sua mente?
+        </label>
+        <textarea 
+            name="Quando você pensa em alguem corajoso, quais características vem a sua mente?"
+            rows="5"
+            class="input-estilizado"
+            required>
+        </textarea>
 
-        <label>3. Você se considera uma pessoa amada?<br>Se sim: quais pessoas demonstram isso para você? De que forma eles demonstram esse afeto?<br>Se não: Quais motivos fazem você não se perceber como uma pessoa amada?</label>
-        <textarea name="pergunta3" rows="8" class="input-estilizado" required></textarea>
-                
-        <label>4. Ao longo da sua história, quais experiências fortaleceram ou fragilizaram a sua percepção sobre a vida?</label>
-        <textarea name="pergunta4" rows="8" class="input-estilizado" required></textarea>
+        <!-- Pergunta 2 -->
+        <label>
+            2. Quais elementos do ambiente de trabalho despertam maior apego em você? Poderia listá-los?
+        </label>
+        <textarea 
+            name="Quais elementos do ambiente de trabalho despertam maior apego em você? Poderia listá-los?"
+            rows="5"
+            class="input-estilizado"
+            required>
+        </textarea>
 
-        <button type="submit" class="botao-enviar">Enviar</button>
+        <!-- Pergunta 3 -->
+        <label>
+            3. Você se considera uma pessoa amada?<br>
+            Se sim: quais pessoas demonstram isso para você? De que forma eles demonstram esse afeto?<br>
+            Se não: Quais motivos fazem você não se perceber como uma pessoa amada?
+        </label>
+        <textarea 
+            name="Você se considera uma pessoa amada? Se sim: quais pessoas demonstram isso para você? De que forma eles demonstram esse afeto? Se não: Quais motivos fazem você não se perceber como uma pessoa amada?"
+            rows="8"
+            class="input-estilizado"
+            required>
+        </textarea>
+
+        <!-- Pergunta 4 -->
+        <label>
+            4. Ao longo da sua história, quais experiências fortaleceram ou fragilizaram a sua percepção sobre a vida?
+        </label>
+        <textarea 
+            name="Ao longo da sua história, quais experiências fortaleceram ou fragilizaram a sua percepção sobre a vida?"
+            rows="8"
+            class="input-estilizado"
+            required>
+        </textarea>
+
+        <button type="submit" class="botao-enviar">
+            Enviar
+        </button>
+
     </form>
 </div>
 
