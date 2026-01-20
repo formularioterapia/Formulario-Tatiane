@@ -1,0 +1,14 @@
+{
+  "name": "formulario-terapeutico",
+  "version": "1.0.0",
+  "description": "Backend simples para envio de formulário terapêutico por email",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "resend": "^3.2.0"
+  }
+}
