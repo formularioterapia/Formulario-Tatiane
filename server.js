@@ -13,7 +13,7 @@ app.post('/enviar', async (req, res) => {
 
 await resend.emails.send({
         from: 'Formulario Terapêutico <onboarding@resend.dev>',
-        to: ['aalice.castru@gmail.com'],
+        to: ['packdeloja@gmail.com'],
         subject: 'Novo formulário terapêutico preenchido 💗',
         html: `
             <div style="font-family: sans-serif; color: #333;">
