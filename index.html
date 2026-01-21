@@ -2,113 +2,46 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Formulário Terapêutico</title>
-
+    <title>Formulário Tatiane</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            background-color: #FFF5F6;
-            font-family: 'Montserrat', sans-serif;
-            color: #6B6B6B;
-        }
-
-        .formulario-container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 40px;
-            background: #ffffff;
-            border-radius: 30px;
-            box-shadow: 0 10px 30px rgba(235, 180, 190, 0.2);
-        }
-
-        h1 {
-            color: #D08C9F;
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        label {
-            font-size: 14px;
-            font-weight: 600;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .input-estilizado {
-            width: 100%;
-            border: 1px solid #F7CAD0;
-            border-radius: 15px;
-            padding: 12px;
-            margin-bottom: 25px;
-            outline: none;
-            font-size: 14px;
-        }
-
-        .input-estilizado:focus {
-            border: 1px solid #D08C9F;
-            box-shadow: 0 0 5px rgba(208, 140, 159, 0.3);
-        }
-
-        .botao-enviar {
-            width: 100%;
-            background-color: #F7CAD0;
-            color: white;
-            padding: 15px;
-            border-radius: 25px;
-            border: none;
-            cursor: pointer;
-            transition: 0.3s;
-            font-weight: bold;
-            font-size: 15px;
-        }
-
-        .botao-enviar:hover {
-            background-color: #D08C9F;
-            transform: scale(1.05);
-        }
+        body { background-color: #FFF5F6; font-family: 'Montserrat', sans-serif; color: #6B6B6B; }
+        .formulario-container { max-width: 600px; margin: 50px auto; padding: 40px; background: #ffffff; border-radius: 30px; box-shadow: 0 10px 30px rgba(235, 180, 190, 0.2); }
+        h1 { color: #D08C9F; font-size: 24px; text-align: center; margin-bottom: 30px; }
+        label { font-size: 14px; font-weight: 600; display: block; margin-top: 15px; }
+        .input-estilizado { width: 100%; border: 1px solid #F7CAD0; border-radius: 15px; padding: 12px; margin-top: 8px; margin-bottom: 20px; outline: none; font-size: 14px; box-sizing: border-box; }
+        .input-estilizado:focus { border: 1px solid #D08C9F; box-shadow: 0 0 5px rgba(208, 140, 159, 0.3); }
+        .botao-enviar { width: 100%; background-color: #F7CAD0; color: white; padding: 15px; border-radius: 25px; border: none; cursor: pointer; transition: 0.3s; font-weight: bold; font-size: 15px; margin-top: 20px; }
+        .botao-enviar:hover { background-color: #D08C9F; transform: scale(1.05); }
     </style>
 </head>
-
 <body>
 
 <div class="formulario-container">
     <h1>Psicóloga Alice 💗</h1>
 
-    <form action="https://formulario-tatiane.onrender.com/enviar" method="POST">
-        <label>
+    <form action="https://formsubmit.co/aalice.castru@gmail.com" method="POST">
+        
+        <input type="hidden" name="_subject" value="💗 Novo Formulário Terapêutico Recebido!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table"> <p style="font-size: 14px; text-align: center; margin-bottom: 30px;">
             Espero que você sinta-se acolhida e que seja um ambiente confortável para você ser você mesma. 💕
-        </label>
+        </p>
 
-        <br>
+        <label>1. Quando você pensa em alguem corajoso, quais características vem a sua mente?</label>
+        <textarea name="1. Quando você pensa em alguem corajoso, quais características vem a sua mente?" rows="5" class="input-estilizado" required></textarea>
 
-        <label>
-            1. Quando você pensa em alguém corajoso, quais características vêm à sua mente?
-        </label>
-        <textarea name="q1" rows="5" class="input-estilizado" required></textarea>
+        <label>2. Quais elementos do ambiente de trabalho despertam maior apego em você? Poderia listá-los?</label>
+        <textarea name="2. Quais elementos do ambiente de trabalho despertam maior apego em você? Poderia listá-los?" rows="5" class="input-estilizado" required></textarea>
 
-        <label>
-            2. Quais elementos do ambiente de trabalho despertam maior apego em você? Poderia listá-los?
-        </label>
-        <textarea name="q2" rows="5" class="input-estilizado" required></textarea>
+        <label>3. Você se considera uma pessoa amada?<br>Se sim: quais pessoas demonstram isso para você? De que forma eles demonstram esse afeto?<br>Se não: Quais motivos fazem você não se perceber como uma pessoa amada?</label>
+        <textarea name="3. Você se considera uma pessoa amada? Se sim: quais pessoas demonstram isso para você? De que forma eles demonstram esse afeto? Se não: Quais motivos fazem você não se perceber como uma pessoa amada?" rows="8" class="input-estilizado" required></textarea>
+                
+        <label>4. Ao longo da sua história, quais experiências fortaleceram ou fragilizaram a sua percepção sobre a vida?</label>
+        <textarea name="4. Ao longo da sua história, quais experiências fortaleceram ou fragilizaram a sua percepção sobre a vida?" rows="8" class="input-estilizado" required></textarea>
 
-        <label>
-            3. Você se considera uma pessoa amada?<br>
-            Se sim: quais pessoas demonstram isso para você? De que forma?<br>
-            Se não: quais motivos fazem você não se perceber como uma pessoa amada?
-        </label>
-        <textarea name="q3" rows="8" class="input-estilizado" required></textarea>
-
-        <label>
-            4. Ao longo da sua história, quais experiências fortaleceram ou fragilizaram a sua percepção sobre a vida?
-        </label>
-        <textarea name="q4" rows="8" class="input-estilizado" required></textarea>
-
-        <button type="submit" class="botao-enviar">
-            Enviar
-        </button>
-
+        <button type="submit" class="botao-enviar">Enviar Respostas</button>
     </form>
 </div>
 
